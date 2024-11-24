@@ -20,7 +20,7 @@ namespace PET_Store
 
         private void PetPanel_Paint(object sender, PaintEventArgs e)
         {
-            string name;
+          
         }
     }
 }
