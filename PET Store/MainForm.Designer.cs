@@ -34,15 +34,24 @@
             this.btnPet = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.First = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.PanelTask = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnPO = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnSale = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnVendor = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picLogout = new System.Windows.Forms.PictureBox();
             this.picCustomer = new System.Windows.Forms.PictureBox();
             this.picPet = new System.Windows.Forms.PictureBox();
             this.picEmployee = new System.Windows.Forms.PictureBox();
             this.picHome = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.PanelTask = new System.Windows.Forms.Panel();
             this.First.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).BeginInit();
@@ -63,20 +72,23 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.Yellow;
+            this.btnLogout.BackColor = System.Drawing.Color.LightGray;
             this.btnLogout.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.Navy;
             this.btnLogout.Location = new System.Drawing.Point(16, 568);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(280, 50);
             this.btnLogout.TabIndex = 13;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnCustomer
             // 
-            this.btnCustomer.BackColor = System.Drawing.Color.Yellow;
+            this.btnCustomer.BackColor = System.Drawing.Color.LightGray;
             this.btnCustomer.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomer.Location = new System.Drawing.Point(16, 467);
+            this.btnCustomer.ForeColor = System.Drawing.Color.Navy;
+            this.btnCustomer.Location = new System.Drawing.Point(16, 211);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(280, 50);
             this.btnCustomer.TabIndex = 11;
@@ -86,9 +98,10 @@
             // 
             // btnPet
             // 
-            this.btnPet.BackColor = System.Drawing.Color.Yellow;
+            this.btnPet.BackColor = System.Drawing.Color.LightGray;
             this.btnPet.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPet.Location = new System.Drawing.Point(16, 366);
+            this.btnPet.ForeColor = System.Drawing.Color.Navy;
+            this.btnPet.Location = new System.Drawing.Point(16, 321);
             this.btnPet.Name = "btnPet";
             this.btnPet.Size = new System.Drawing.Size(280, 50);
             this.btnPet.TabIndex = 9;
@@ -98,19 +111,26 @@
             // 
             // btnEmployee
             // 
-            this.btnEmployee.BackColor = System.Drawing.Color.Yellow;
+            this.btnEmployee.BackColor = System.Drawing.Color.LightGray;
             this.btnEmployee.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployee.Location = new System.Drawing.Point(16, 265);
+            this.btnEmployee.ForeColor = System.Drawing.Color.Navy;
+            this.btnEmployee.Location = new System.Drawing.Point(16, 156);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Size = new System.Drawing.Size(280, 50);
             this.btnEmployee.TabIndex = 7;
-            this.btnEmployee.Text = "Employee";
+            this.btnEmployee.Text = "  Employee";
             this.btnEmployee.UseVisualStyleBackColor = false;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
             // First
             // 
-            this.First.BackColor = System.Drawing.Color.GreenYellow;
+            this.First.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.First.Controls.Add(this.pictureBox4);
+            this.First.Controls.Add(this.btnPO);
+            this.First.Controls.Add(this.pictureBox3);
+            this.First.Controls.Add(this.btnSale);
+            this.First.Controls.Add(this.pictureBox1);
+            this.First.Controls.Add(this.btnVendor);
             this.First.Controls.Add(this.lblEmpName);
             this.First.Controls.Add(this.pictureBox2);
             this.First.Controls.Add(this.picLogout);
@@ -130,25 +150,72 @@
             this.First.Size = new System.Drawing.Size(1222, 659);
             this.First.TabIndex = 1;
             // 
-            // btnHome
+            // pictureBox4
             // 
-            this.btnHome.BackColor = System.Drawing.Color.Yellow;
-            this.btnHome.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Location = new System.Drawing.Point(16, 164);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(280, 50);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.pictureBox4.Image = global::PET_Store.Properties.Resources.Purchese;
+            this.pictureBox4.Location = new System.Drawing.Point(21, 437);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(68, 41);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 21;
+            this.pictureBox4.TabStop = false;
             // 
-            // PanelTask
+            // btnPO
             // 
-            this.PanelTask.BackColor = System.Drawing.Color.Aquamarine;
-            this.PanelTask.Location = new System.Drawing.Point(314, 12);
-            this.PanelTask.Name = "PanelTask";
-            this.PanelTask.Size = new System.Drawing.Size(896, 635);
-            this.PanelTask.TabIndex = 6;
+            this.btnPO.BackColor = System.Drawing.Color.LightGray;
+            this.btnPO.Font = new System.Drawing.Font("Modern No. 20", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPO.ForeColor = System.Drawing.Color.Navy;
+            this.btnPO.Location = new System.Drawing.Point(16, 433);
+            this.btnPO.Name = "btnPO";
+            this.btnPO.Size = new System.Drawing.Size(280, 50);
+            this.btnPO.TabIndex = 20;
+            this.btnPO.Text = "       Purchase Order";
+            this.btnPO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPO.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PET_Store.Properties.Resources.Sale_removebg_preview;
+            this.pictureBox3.Location = new System.Drawing.Point(21, 381);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(68, 41);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnSale
+            // 
+            this.btnSale.BackColor = System.Drawing.Color.LightGray;
+            this.btnSale.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSale.ForeColor = System.Drawing.Color.Navy;
+            this.btnSale.Location = new System.Drawing.Point(16, 377);
+            this.btnSale.Name = "btnSale";
+            this.btnSale.Size = new System.Drawing.Size(280, 50);
+            this.btnSale.TabIndex = 18;
+            this.btnSale.Text = "Sale";
+            this.btnSale.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PET_Store.Properties.Resources.Vendor;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 271);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(68, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnVendor
+            // 
+            this.btnVendor.BackColor = System.Drawing.Color.LightGray;
+            this.btnVendor.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendor.ForeColor = System.Drawing.Color.Navy;
+            this.btnVendor.Location = new System.Drawing.Point(16, 267);
+            this.btnVendor.Name = "btnVendor";
+            this.btnVendor.Size = new System.Drawing.Size(280, 50);
+            this.btnVendor.TabIndex = 16;
+            this.btnVendor.Text = "Vendor";
+            this.btnVendor.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -173,7 +240,7 @@
             // picCustomer
             // 
             this.picCustomer.Image = global::PET_Store.Properties.Resources.customer;
-            this.picCustomer.Location = new System.Drawing.Point(21, 471);
+            this.picCustomer.Location = new System.Drawing.Point(21, 215);
             this.picCustomer.Name = "picCustomer";
             this.picCustomer.Size = new System.Drawing.Size(68, 41);
             this.picCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -183,7 +250,7 @@
             // picPet
             // 
             this.picPet.Image = global::PET_Store.Properties.Resources.PetIcon;
-            this.picPet.Location = new System.Drawing.Point(21, 370);
+            this.picPet.Location = new System.Drawing.Point(21, 325);
             this.picPet.Name = "picPet";
             this.picPet.Size = new System.Drawing.Size(68, 41);
             this.picPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -193,7 +260,7 @@
             // picEmployee
             // 
             this.picEmployee.Image = global::PET_Store.Properties.Resources.Employee;
-            this.picEmployee.Location = new System.Drawing.Point(21, 269);
+            this.picEmployee.Location = new System.Drawing.Point(21, 160);
             this.picEmployee.Name = "picEmployee";
             this.picEmployee.Size = new System.Drawing.Size(68, 41);
             this.picEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,12 +270,33 @@
             // picHome
             // 
             this.picHome.Image = global::PET_Store.Properties.Resources.Home1;
-            this.picHome.Location = new System.Drawing.Point(21, 168);
+            this.picHome.Location = new System.Drawing.Point(21, 105);
             this.picHome.Name = "picHome";
             this.picHome.Size = new System.Drawing.Size(68, 41);
             this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHome.TabIndex = 4;
             this.picHome.TabStop = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.LightGray;
+            this.btnHome.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.Navy;
+            this.btnHome.Location = new System.Drawing.Point(16, 101);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(280, 50);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // PanelTask
+            // 
+            this.PanelTask.BackColor = System.Drawing.Color.White;
+            this.PanelTask.Location = new System.Drawing.Point(314, 12);
+            this.PanelTask.Name = "PanelTask";
+            this.PanelTask.Size = new System.Drawing.Size(896, 635);
+            this.PanelTask.TabIndex = 6;
             // 
             // MainForm
             // 
@@ -222,6 +310,9 @@
             this.Text = "Employee";
             this.First.ResumeLayout(false);
             this.First.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).EndInit();
@@ -247,5 +338,11 @@
         private System.Windows.Forms.Panel First;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel PanelTask;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnVendor;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnPO;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnSale;
     }
 }
