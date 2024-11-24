@@ -70,5 +70,9 @@ namespace PET_Store
             PanelTask.Controls.Add(Cus);
             Cus.BringToFront();
         }
+        private void Testing()
+        {
+            string a;
+        }
     }
 }
