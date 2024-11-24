@@ -72,9 +72,11 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.LightGray;
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(210)))), ((int)(((byte)(254)))));
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.Navy;
+            this.btnLogout.ForeColor = System.Drawing.Color.Black;
             this.btnLogout.Location = new System.Drawing.Point(16, 568);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(280, 50);
@@ -85,9 +87,11 @@
             // 
             // btnCustomer
             // 
-            this.btnCustomer.BackColor = System.Drawing.Color.LightGray;
+            this.btnCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnCustomer.FlatAppearance.BorderSize = 0;
+            this.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomer.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomer.ForeColor = System.Drawing.Color.Navy;
+            this.btnCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.btnCustomer.Location = new System.Drawing.Point(16, 211);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(280, 50);
@@ -98,9 +102,11 @@
             // 
             // btnPet
             // 
-            this.btnPet.BackColor = System.Drawing.Color.LightGray;
+            this.btnPet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnPet.FlatAppearance.BorderSize = 0;
+            this.btnPet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPet.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPet.ForeColor = System.Drawing.Color.Navy;
+            this.btnPet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.btnPet.Location = new System.Drawing.Point(16, 321);
             this.btnPet.Name = "btnPet";
             this.btnPet.Size = new System.Drawing.Size(280, 50);
@@ -111,9 +117,10 @@
             // 
             // btnEmployee
             // 
-            this.btnEmployee.BackColor = System.Drawing.Color.LightGray;
+            this.btnEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmployee.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployee.ForeColor = System.Drawing.Color.Navy;
+            this.btnEmployee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.btnEmployee.Location = new System.Drawing.Point(16, 156);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Size = new System.Drawing.Size(280, 50);
@@ -145,6 +152,7 @@
             this.First.Controls.Add(this.btnHome);
             this.First.Controls.Add(this.PanelTask);
             this.First.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.First.ForeColor = System.Drawing.Color.DarkGray;
             this.First.Location = new System.Drawing.Point(0, 0);
             this.First.Name = "First";
             this.First.Size = new System.Drawing.Size(1222, 659);
@@ -162,9 +170,11 @@
             // 
             // btnPO
             // 
-            this.btnPO.BackColor = System.Drawing.Color.LightGray;
+            this.btnPO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnPO.FlatAppearance.BorderSize = 0;
+            this.btnPO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPO.Font = new System.Drawing.Font("Modern No. 20", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPO.ForeColor = System.Drawing.Color.Navy;
+            this.btnPO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.btnPO.Location = new System.Drawing.Point(16, 433);
             this.btnPO.Name = "btnPO";
             this.btnPO.Size = new System.Drawing.Size(280, 50);
@@ -185,9 +195,11 @@
             // 
             // btnSale
             // 
-            this.btnSale.BackColor = System.Drawing.Color.LightGray;
+            this.btnSale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(210)))), ((int)(((byte)(254)))));
+            this.btnSale.FlatAppearance.BorderSize = 0;
+            this.btnSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSale.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSale.ForeColor = System.Drawing.Color.Navy;
+            this.btnSale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.btnSale.Location = new System.Drawing.Point(16, 377);
             this.btnSale.Name = "btnSale";
             this.btnSale.Size = new System.Drawing.Size(280, 50);
@@ -207,9 +219,11 @@
             // 
             // btnVendor
             // 
-            this.btnVendor.BackColor = System.Drawing.Color.LightGray;
+            this.btnVendor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnVendor.FlatAppearance.BorderSize = 0;
+            this.btnVendor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVendor.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVendor.ForeColor = System.Drawing.Color.Navy;
+            this.btnVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.btnVendor.Location = new System.Drawing.Point(16, 267);
             this.btnVendor.Name = "btnVendor";
             this.btnVendor.Size = new System.Drawing.Size(280, 50);
@@ -279,9 +293,11 @@
             // 
             // btnHome
             // 
-            this.btnHome.BackColor = System.Drawing.Color.LightGray;
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.Navy;
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.btnHome.Location = new System.Drawing.Point(16, 101);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(280, 50);
@@ -293,6 +309,7 @@
             // PanelTask
             // 
             this.PanelTask.BackColor = System.Drawing.Color.White;
+            this.PanelTask.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.PanelTask.Location = new System.Drawing.Point(314, 12);
             this.PanelTask.Name = "PanelTask";
             this.PanelTask.Size = new System.Drawing.Size(896, 635);
