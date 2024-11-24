@@ -1,0 +1,60 @@
+﻿namespace PET_Store
+{
+    partial class Employee
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.EmpPanel = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // EmpPanel
+            // 
+            this.EmpPanel.BackColor = System.Drawing.Color.LightGreen;
+            this.EmpPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EmpPanel.Location = new System.Drawing.Point(0, 0);
+            this.EmpPanel.Name = "EmpPanel";
+            this.EmpPanel.Size = new System.Drawing.Size(896, 635);
+            this.EmpPanel.TabIndex = 8;
+            // 
+            // Employee
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(896, 635);
+            this.Controls.Add(this.EmpPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Employee";
+            this.Text = "Employee";
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel EmpPanel;
+    }
+}
