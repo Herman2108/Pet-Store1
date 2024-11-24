@@ -34,20 +34,20 @@
             this.btnPet = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.First = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.PanelTask = new System.Windows.Forms.Panel();
-            this.btnVendor = new System.Windows.Forms.Button();
-            this.btnSale = new System.Windows.Forms.Button();
-            this.btnPO = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnPO = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnSale = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnVendor = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picLogout = new System.Windows.Forms.PictureBox();
             this.picCustomer = new System.Windows.Forms.PictureBox();
             this.picPet = new System.Windows.Forms.PictureBox();
             this.picEmployee = new System.Windows.Forms.PictureBox();
             this.picHome = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.PanelTask = new System.Windows.Forms.Panel();
             this.First.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -157,57 +157,15 @@
             this.First.Size = new System.Drawing.Size(1222, 659);
             this.First.TabIndex = 1;
             // 
-            // btnHome
+            // pictureBox4
             // 
-            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.btnHome.Location = new System.Drawing.Point(16, 101);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(280, 50);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // PanelTask
-            // 
-            this.PanelTask.BackColor = System.Drawing.Color.White;
-            this.PanelTask.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.PanelTask.Location = new System.Drawing.Point(314, 12);
-            this.PanelTask.Name = "PanelTask";
-            this.PanelTask.Size = new System.Drawing.Size(896, 635);
-            this.PanelTask.TabIndex = 6;
-            // 
-            // btnVendor
-            // 
-            this.btnVendor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
-            this.btnVendor.FlatAppearance.BorderSize = 0;
-            this.btnVendor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendor.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.btnVendor.Location = new System.Drawing.Point(16, 267);
-            this.btnVendor.Name = "btnVendor";
-            this.btnVendor.Size = new System.Drawing.Size(280, 50);
-            this.btnVendor.TabIndex = 16;
-            this.btnVendor.Text = "Vendor";
-            this.btnVendor.UseVisualStyleBackColor = false;
-            // 
-            // btnSale
-            // 
-            this.btnSale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
-            this.btnSale.FlatAppearance.BorderSize = 0;
-            this.btnSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSale.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.btnSale.Location = new System.Drawing.Point(16, 377);
-            this.btnSale.Name = "btnSale";
-            this.btnSale.Size = new System.Drawing.Size(280, 50);
-            this.btnSale.TabIndex = 18;
-            this.btnSale.Text = "Sale";
-            this.btnSale.UseVisualStyleBackColor = false;
+            this.pictureBox4.Image = global::PET_Store.Properties.Resources.Purchese;
+            this.pictureBox4.Location = new System.Drawing.Point(21, 437);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(68, 41);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 21;
+            this.pictureBox4.TabStop = false;
             // 
             // btnPO
             // 
@@ -224,16 +182,6 @@
             this.btnPO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPO.UseVisualStyleBackColor = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::PET_Store.Properties.Resources.Purchese;
-            this.pictureBox4.Location = new System.Drawing.Point(21, 437);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(68, 41);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 21;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::PET_Store.Properties.Resources.Sale_removebg_preview;
@@ -244,6 +192,20 @@
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
             // 
+            // btnSale
+            // 
+            this.btnSale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(210)))), ((int)(((byte)(254)))));
+            this.btnSale.FlatAppearance.BorderSize = 0;
+            this.btnSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSale.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.btnSale.Location = new System.Drawing.Point(16, 377);
+            this.btnSale.Name = "btnSale";
+            this.btnSale.Size = new System.Drawing.Size(280, 50);
+            this.btnSale.TabIndex = 18;
+            this.btnSale.Text = "Sale";
+            this.btnSale.UseVisualStyleBackColor = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PET_Store.Properties.Resources.Vendor;
@@ -253,6 +215,20 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnVendor
+            // 
+            this.btnVendor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnVendor.FlatAppearance.BorderSize = 0;
+            this.btnVendor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendor.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.btnVendor.Location = new System.Drawing.Point(16, 267);
+            this.btnVendor.Name = "btnVendor";
+            this.btnVendor.Size = new System.Drawing.Size(280, 50);
+            this.btnVendor.TabIndex = 16;
+            this.btnVendor.Text = "Vendor";
+            this.btnVendor.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -313,6 +289,30 @@
             this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHome.TabIndex = 4;
             this.picHome.TabStop = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.btnHome.Location = new System.Drawing.Point(16, 101);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(280, 50);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // PanelTask
+            // 
+            this.PanelTask.BackColor = System.Drawing.Color.White;
+            this.PanelTask.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.PanelTask.Location = new System.Drawing.Point(314, 12);
+            this.PanelTask.Name = "PanelTask";
+            this.PanelTask.Size = new System.Drawing.Size(896, 635);
+            this.PanelTask.TabIndex = 6;
             // 
             // MainForm
             // 
