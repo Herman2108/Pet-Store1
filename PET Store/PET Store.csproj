@@ -203,5 +203,17 @@
   <ItemGroup>
     <None Include="Resources\PetIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vendor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sale-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purchese-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purchese.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
