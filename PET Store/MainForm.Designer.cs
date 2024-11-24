@@ -34,14 +34,14 @@
             this.btnPet = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.First = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.PanelTask = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picLogout = new System.Windows.Forms.PictureBox();
             this.picCustomer = new System.Windows.Forms.PictureBox();
             this.picPet = new System.Windows.Forms.PictureBox();
             this.picEmployee = new System.Windows.Forms.PictureBox();
             this.picHome = new System.Windows.Forms.PictureBox();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.PanelTask = new System.Windows.Forms.Panel();
             this.First.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogout)).BeginInit();
@@ -71,6 +71,7 @@
             this.btnLogout.TabIndex = 13;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnCustomer
             // 
@@ -129,26 +130,6 @@
             this.First.Name = "First";
             this.First.Size = new System.Drawing.Size(1222, 659);
             this.First.TabIndex = 1;
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.Yellow;
-            this.btnHome.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Location = new System.Drawing.Point(16, 164);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(280, 50);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // PanelTask
-            // 
-            this.PanelTask.BackColor = System.Drawing.Color.Aquamarine;
-            this.PanelTask.Location = new System.Drawing.Point(314, 12);
-            this.PanelTask.Name = "PanelTask";
-            this.PanelTask.Size = new System.Drawing.Size(896, 635);
-            this.PanelTask.TabIndex = 6;
             // 
             // pictureBox2
             // 
@@ -209,6 +190,26 @@
             this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picHome.TabIndex = 4;
             this.picHome.TabStop = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Yellow;
+            this.btnHome.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Location = new System.Drawing.Point(16, 164);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(280, 50);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // PanelTask
+            // 
+            this.PanelTask.BackColor = System.Drawing.Color.Aquamarine;
+            this.PanelTask.Location = new System.Drawing.Point(314, 12);
+            this.PanelTask.Name = "PanelTask";
+            this.PanelTask.Size = new System.Drawing.Size(896, 635);
+            this.PanelTask.TabIndex = 6;
             // 
             // MainForm
             // 

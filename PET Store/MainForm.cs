@@ -70,5 +70,10 @@ namespace PET_Store
             PanelTask.Controls.Add(Cus);
             Cus.BringToFront();
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
