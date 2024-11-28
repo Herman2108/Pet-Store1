@@ -30,16 +30,28 @@
         {
             this.CusPanel = new System.Windows.Forms.Panel();
             this.EmpPanel = new System.Windows.Forms.Panel();
+            this.panelShow = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCS = new System.Windows.Forms.Button();
             this.btnAC = new System.Windows.Forms.Button();
-            this.panelShow = new System.Windows.Forms.Panel();
             this.PosterCS = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CusPanel.SuspendLayout();
             this.EmpPanel.SuspendLayout();
+            this.panelShow.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PosterCS)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // CusPanel
@@ -62,6 +74,15 @@
             this.EmpPanel.Name = "EmpPanel";
             this.EmpPanel.Size = new System.Drawing.Size(896, 635);
             this.EmpPanel.TabIndex = 9;
+            // 
+            // panelShow
+            // 
+            this.panelShow.BackColor = System.Drawing.Color.GhostWhite;
+            this.panelShow.Controls.Add(this.flowLayoutPanel1);
+            this.panelShow.Location = new System.Drawing.Point(0, 171);
+            this.panelShow.Name = "panelShow";
+            this.panelShow.Size = new System.Drawing.Size(896, 464);
+            this.panelShow.TabIndex = 1;
             // 
             // panel1
             // 
@@ -108,14 +129,6 @@
             this.btnAC.UseVisualStyleBackColor = true;
             this.btnAC.Click += new System.EventHandler(this.btnAC_Click);
             // 
-            // panelShow
-            // 
-            this.panelShow.BackColor = System.Drawing.Color.GhostWhite;
-            this.panelShow.Location = new System.Drawing.Point(0, 171);
-            this.panelShow.Name = "panelShow";
-            this.panelShow.Size = new System.Drawing.Size(896, 464);
-            this.panelShow.TabIndex = 1;
-            // 
             // PosterCS
             // 
             this.PosterCS.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -126,6 +139,79 @@
             this.PosterCS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PosterCS.TabIndex = 0;
             this.PosterCS.TabStop = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.dataGridView1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(896, 464);
+            this.flowLayoutPanel1.TabIndex = 3;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.dataGridView1.ColumnHeadersHeight = 29;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Name,
+            this.Sex,
+            this.Phone,
+            this.DOB,
+            this.Email,
+            this.Address});
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(896, 464);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            // 
+            // Name
+            // 
+            this.Name.HeaderText = "Name";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            // 
+            // Sex
+            // 
+            this.Sex.HeaderText = "Sex";
+            this.Sex.MinimumWidth = 6;
+            this.Sex.Name = "Sex";
+            // 
+            // Phone
+            // 
+            this.Phone.HeaderText = "Phone Number";
+            this.Phone.MinimumWidth = 6;
+            this.Phone.Name = "Phone";
+            // 
+            // DOB
+            // 
+            this.DOB.HeaderText = "Date Of Birth";
+            this.DOB.MinimumWidth = 6;
+            this.DOB.Name = "DOB";
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            // 
+            // Address
+            // 
+            this.Address.HeaderText = "Address";
+            this.Address.MinimumWidth = 6;
+            this.Address.Name = "Address";
             // 
             // Customer
             // 
@@ -138,8 +224,11 @@
             this.Text = "Customer";
             this.CusPanel.ResumeLayout(false);
             this.EmpPanel.ResumeLayout(false);
+            this.panelShow.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PosterCS)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,5 +243,14 @@
         private System.Windows.Forms.Button btnAC;
         private System.Windows.Forms.PictureBox PosterCS;
         private System.Windows.Forms.Panel panelShow;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sex;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DOB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
     }
 }
