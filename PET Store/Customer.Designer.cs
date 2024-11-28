@@ -34,6 +34,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCS = new System.Windows.Forms.Button();
             this.btnAC = new System.Windows.Forms.Button();
+            this.panelShow = new System.Windows.Forms.Panel();
             this.PosterCS = new System.Windows.Forms.PictureBox();
             this.CusPanel.SuspendLayout();
             this.EmpPanel.SuspendLayout();
@@ -54,6 +55,7 @@
             // EmpPanel
             // 
             this.EmpPanel.BackColor = System.Drawing.Color.LightGreen;
+            this.EmpPanel.Controls.Add(this.panelShow);
             this.EmpPanel.Controls.Add(this.panel1);
             this.EmpPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EmpPanel.Location = new System.Drawing.Point(0, 0);
@@ -74,6 +76,8 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnUpdate.Location = new System.Drawing.Point(723, 114);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(144, 41);
@@ -83,6 +87,8 @@
             // 
             // btnCS
             // 
+            this.btnCS.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCS.ForeColor = System.Drawing.Color.Black;
             this.btnCS.Location = new System.Drawing.Point(723, 67);
             this.btnCS.Name = "btnCS";
             this.btnCS.Size = new System.Drawing.Size(144, 41);
@@ -92,12 +98,23 @@
             // 
             // btnAC
             // 
+            this.btnAC.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAC.ForeColor = System.Drawing.Color.Black;
             this.btnAC.Location = new System.Drawing.Point(723, 20);
             this.btnAC.Name = "btnAC";
             this.btnAC.Size = new System.Drawing.Size(144, 41);
             this.btnAC.TabIndex = 1;
             this.btnAC.Text = "Add Customer";
             this.btnAC.UseVisualStyleBackColor = true;
+            this.btnAC.Click += new System.EventHandler(this.btnAC_Click);
+            // 
+            // panelShow
+            // 
+            this.panelShow.BackColor = System.Drawing.Color.GhostWhite;
+            this.panelShow.Location = new System.Drawing.Point(0, 171);
+            this.panelShow.Name = "panelShow";
+            this.panelShow.Size = new System.Drawing.Size(896, 464);
+            this.panelShow.TabIndex = 1;
             // 
             // PosterCS
             // 
@@ -136,5 +153,6 @@
         private System.Windows.Forms.Button btnCS;
         private System.Windows.Forms.Button btnAC;
         private System.Windows.Forms.PictureBox PosterCS;
+        private System.Windows.Forms.Panel panelShow;
     }
 }

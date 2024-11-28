@@ -16,5 +16,19 @@ namespace PET_Store
         {
             InitializeComponent();
         }
+
+        private void btnAC_Click(object sender, EventArgs e)
+        {
+            AddCustomer ACus = new AddCustomer();
+            ACus.TopLevel = false;
+            ACus.Show();
+            /*if (PanelTask.Controls.Count > 0)
+            {
+                PanelTask.Controls.Clear();
+                PanelTask.Controls.Add(emp);
+            }*/
+            panelShow.Controls.Add(ACus);
+            ACus.BringToFront();
+        }
     }
 }
