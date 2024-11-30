@@ -30,5 +30,14 @@ namespace PET_Store
             panelShow.Controls.Add(ACus);
             ACus.BringToFront();
         }
+
+        private void btnCS_Click(object sender, EventArgs e)
+        {
+            SubCustomer SCus = new SubCustomer();
+            SCus.TopLevel = false;
+            SCus.Show();
+            panelShow.Controls.Add(SCus);
+            SCus.BringToFront();
+        }
     }
 }
