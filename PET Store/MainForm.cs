@@ -24,9 +24,13 @@ namespace PET_Store
         {   
             Home home= new Home();
             home.TopLevel = false;
-            home.Show();
+            if (splitContainer1.Panel2.Controls.Count > 0)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+            }
             splitContainer1.Panel2.Controls.Add(home);
             home.BringToFront();
+            home.Show();
         }
 
         private void btnEmployee_Click(object sender, EventArgs e)
@@ -46,38 +50,31 @@ namespace PET_Store
         {
             Pet pet = new Pet();
             pet.TopLevel = false;
-            pet.Show();
-            /*if (PanelTask.Controls.Count > 0)
+            if (splitContainer1.Panel2.Controls.Count > 0)
             {
-                PanelTask.Controls.Clear();
-                PanelTask.Controls.Add(emp);
-            }*/
+                splitContainer1.Panel2.Controls.Clear();
+            }
             splitContainer1.Panel2.Controls.Add(pet);
             pet.BringToFront();
+            pet.Show();
         }
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             Customer Cus= new Customer();
             Cus.TopLevel = false;
-            Cus.Show();
-            /*if (PanelTask.Controls.Count > 0)
+            if (splitContainer1.Panel2.Controls.Count > 0)
             {
-                PanelTask.Controls.Clear();
-                PanelTask.Controls.Add(emp);
-            }*/
+                splitContainer1.Panel2.Controls.Clear();
+            }
             splitContainer1.Panel2.Controls.Add(Cus);
             Cus.BringToFront();
+            Cus.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

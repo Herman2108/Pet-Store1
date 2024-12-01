@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.PanelAC = new System.Windows.Forms.Panel();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
@@ -44,8 +46,6 @@
             this.txtFName = new System.Windows.Forms.TextBox();
             this.lblFNameCS = new System.Windows.Forms.Label();
             this.lblAddCS = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.lblAddress = new System.Windows.Forms.Label();
             this.PanelAC.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +74,27 @@
             this.PanelAC.Name = "PanelAC";
             this.PanelAC.Size = new System.Drawing.Size(896, 464);
             this.PanelAC.TabIndex = 0;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.AccessibleDescription = "";
+            this.txtAddress.AccessibleName = "";
+            this.txtAddress.Location = new System.Drawing.Point(17, 402);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(678, 35);
+            this.txtAddress.TabIndex = 16;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.Black;
+            this.lblAddress.Location = new System.Drawing.Point(12, 361);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(91, 25);
+            this.lblAddress.TabIndex = 15;
+            this.lblAddress.Text = "Address";
             // 
             // txtEmail
             // 
@@ -233,27 +254,6 @@
             this.lblAddCS.Text = "Add Customer";
             this.lblAddCS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtAddress
-            // 
-            this.txtAddress.AccessibleDescription = "";
-            this.txtAddress.AccessibleName = "";
-            this.txtAddress.Location = new System.Drawing.Point(17, 402);
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(678, 35);
-            this.txtAddress.TabIndex = 16;
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.ForeColor = System.Drawing.Color.Black;
-            this.lblAddress.Location = new System.Drawing.Point(12, 361);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(91, 25);
-            this.lblAddress.TabIndex = 15;
-            this.lblAddress.Text = "Address";
-            // 
             // AddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -262,7 +262,9 @@
             this.Controls.Add(this.PanelAC);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddCustomer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddCustomer";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PanelAC.ResumeLayout(false);
             this.PanelAC.PerformLayout();
             this.ResumeLayout(false);
