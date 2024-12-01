@@ -96,12 +96,6 @@
     <Reference Include="UIAutomationTypes" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddCustomer.Designer.cs">
-      <DependentUpon>AddCustomer.cs</DependentUpon>
-    </Compile>
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,15 +146,6 @@
     <Compile Include="SaleForm.Designer.cs">
       <DependentUpon>SaleForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SubCustomer.Designer.cs">
-      <DependentUpon>SubCustomer.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AddCustomer.resx">
-      <DependentUpon>AddCustomer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,9 +179,6 @@
     </Compile>
     <EmbeddedResource Include="SaleForm.resx">
       <DependentUpon>SaleForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SubCustomer.resx">
-      <DependentUpon>SubCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
