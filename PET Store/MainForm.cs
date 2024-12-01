@@ -75,11 +75,5 @@ namespace PET_Store
         {
             Application.Exit();
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-
-        }
     }
 }
