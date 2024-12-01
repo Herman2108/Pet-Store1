@@ -34,33 +34,33 @@
             this.btnPet = new System.Windows.Forms.Button();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.First = new System.Windows.Forms.Panel();
-            this.btnPO = new System.Windows.Forms.Button();
-            this.btnSale = new System.Windows.Forms.Button();
-            this.btnVendor = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnPO = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.picHome = new System.Windows.Forms.PictureBox();
+            this.btnSale = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picEmployee = new System.Windows.Forms.PictureBox();
+            this.btnVendor = new System.Windows.Forms.Button();
+            this.picPet = new System.Windows.Forms.PictureBox();
             this.picLogout = new System.Windows.Forms.PictureBox();
             this.picCustomer = new System.Windows.Forms.PictureBox();
-            this.picPet = new System.Windows.Forms.PictureBox();
-            this.picEmployee = new System.Windows.Forms.PictureBox();
-            this.picHome = new System.Windows.Forms.PictureBox();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnHome = new System.Windows.Forms.Button();
             this.First.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmployee)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEmpName
@@ -155,165 +155,6 @@
             this.First.Size = new System.Drawing.Size(1307, 841);
             this.First.TabIndex = 1;
             // 
-            // btnPO
-            // 
-            this.btnPO.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
-            this.btnPO.FlatAppearance.BorderSize = 0;
-            this.btnPO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPO.Font = new System.Drawing.Font("Modern No. 20", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.btnPO.Location = new System.Drawing.Point(9, 424);
-            this.btnPO.Name = "btnPO";
-            this.btnPO.Size = new System.Drawing.Size(396, 50);
-            this.btnPO.TabIndex = 20;
-            this.btnPO.Text = "         Purchase Order";
-            this.btnPO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPO.UseVisualStyleBackColor = false;
-            // 
-            // btnSale
-            // 
-            this.btnSale.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
-            this.btnSale.FlatAppearance.BorderSize = 0;
-            this.btnSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSale.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.btnSale.Location = new System.Drawing.Point(9, 368);
-            this.btnSale.Name = "btnSale";
-            this.btnSale.Size = new System.Drawing.Size(396, 50);
-            this.btnSale.TabIndex = 18;
-            this.btnSale.Text = "         Sale";
-            this.btnSale.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSale.UseVisualStyleBackColor = false;
-            // 
-            // btnVendor
-            // 
-            this.btnVendor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVendor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
-            this.btnVendor.FlatAppearance.BorderSize = 0;
-            this.btnVendor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendor.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.btnVendor.Location = new System.Drawing.Point(9, 258);
-            this.btnVendor.Name = "btnVendor";
-            this.btnVendor.Size = new System.Drawing.Size(396, 50);
-            this.btnVendor.TabIndex = 16;
-            this.btnVendor.Text = "         Vendor";
-            this.btnVendor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendor.UseVisualStyleBackColor = false;
-            // 
-            // btnHome
-            // 
-            this.btnHome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.btnHome.Location = new System.Drawing.Point(9, 92);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(396, 50);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "         Home";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::PET_Store.Properties.Resources.Purchese;
-            this.pictureBox4.Location = new System.Drawing.Point(14, 428);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(68, 41);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 21;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PET_Store.Properties.Resources.Sale_removebg_preview;
-            this.pictureBox3.Location = new System.Drawing.Point(14, 372);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(68, 41);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PET_Store.Properties.Resources.Vendor;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 262);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(68, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PET_Store.Properties.Resources._118418_user_512x512;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(94, 85);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
-            // picLogout
-            // 
-            this.picLogout.Image = global::PET_Store.Properties.Resources.logout;
-            this.picLogout.Location = new System.Drawing.Point(14, 563);
-            this.picLogout.Name = "picLogout";
-            this.picLogout.Size = new System.Drawing.Size(68, 41);
-            this.picLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogout.TabIndex = 14;
-            this.picLogout.TabStop = false;
-            // 
-            // picCustomer
-            // 
-            this.picCustomer.Image = global::PET_Store.Properties.Resources.customer;
-            this.picCustomer.Location = new System.Drawing.Point(14, 206);
-            this.picCustomer.Name = "picCustomer";
-            this.picCustomer.Size = new System.Drawing.Size(68, 41);
-            this.picCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picCustomer.TabIndex = 12;
-            this.picCustomer.TabStop = false;
-            // 
-            // picPet
-            // 
-            this.picPet.Image = global::PET_Store.Properties.Resources.PetIcon;
-            this.picPet.Location = new System.Drawing.Point(14, 316);
-            this.picPet.Name = "picPet";
-            this.picPet.Size = new System.Drawing.Size(68, 41);
-            this.picPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPet.TabIndex = 10;
-            this.picPet.TabStop = false;
-            // 
-            // picEmployee
-            // 
-            this.picEmployee.Image = global::PET_Store.Properties.Resources.Employee;
-            this.picEmployee.Location = new System.Drawing.Point(14, 151);
-            this.picEmployee.Name = "picEmployee";
-            this.picEmployee.Size = new System.Drawing.Size(68, 41);
-            this.picEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picEmployee.TabIndex = 8;
-            this.picEmployee.TabStop = false;
-            // 
-            // picHome
-            // 
-            this.picHome.Image = global::PET_Store.Properties.Resources.Home1;
-            this.picHome.Location = new System.Drawing.Point(14, 96);
-            this.picHome.Name = "picHome";
-            this.picHome.Size = new System.Drawing.Size(68, 41);
-            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picHome.TabIndex = 4;
-            this.picHome.TabStop = false;
-            // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -340,7 +181,6 @@
             this.splitContainer1.Panel1.Controls.Add(this.btnEmployee);
             this.splitContainer1.Panel1.Controls.Add(this.btnPet);
             this.splitContainer1.Panel1.Controls.Add(this.btnCustomer);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
@@ -348,6 +188,165 @@
             this.splitContainer1.Size = new System.Drawing.Size(1307, 841);
             this.splitContainer1.SplitterDistance = 200;
             this.splitContainer1.TabIndex = 22;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::PET_Store.Properties.Resources.Purchese;
+            this.pictureBox4.Location = new System.Drawing.Point(14, 428);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(68, 41);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 21;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PET_Store.Properties.Resources._118418_user_512x512;
+            this.pictureBox2.Location = new System.Drawing.Point(14, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(94, 85);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnPO
+            // 
+            this.btnPO.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnPO.FlatAppearance.BorderSize = 0;
+            this.btnPO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPO.Font = new System.Drawing.Font("Modern No. 20", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.btnPO.Location = new System.Drawing.Point(9, 424);
+            this.btnPO.Name = "btnPO";
+            this.btnPO.Size = new System.Drawing.Size(396, 50);
+            this.btnPO.TabIndex = 20;
+            this.btnPO.Text = "         Purchase Order";
+            this.btnPO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPO.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PET_Store.Properties.Resources.Sale_removebg_preview;
+            this.pictureBox3.Location = new System.Drawing.Point(14, 372);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(68, 41);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            // 
+            // picHome
+            // 
+            this.picHome.Image = global::PET_Store.Properties.Resources.Home1;
+            this.picHome.Location = new System.Drawing.Point(14, 96);
+            this.picHome.Name = "picHome";
+            this.picHome.Size = new System.Drawing.Size(68, 41);
+            this.picHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picHome.TabIndex = 4;
+            this.picHome.TabStop = false;
+            // 
+            // btnSale
+            // 
+            this.btnSale.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnSale.FlatAppearance.BorderSize = 0;
+            this.btnSale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSale.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSale.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.btnSale.Location = new System.Drawing.Point(9, 368);
+            this.btnSale.Name = "btnSale";
+            this.btnSale.Size = new System.Drawing.Size(396, 50);
+            this.btnSale.TabIndex = 18;
+            this.btnSale.Text = "         Sale";
+            this.btnSale.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSale.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PET_Store.Properties.Resources.Vendor;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 262);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(68, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picEmployee
+            // 
+            this.picEmployee.Image = global::PET_Store.Properties.Resources.Employee;
+            this.picEmployee.Location = new System.Drawing.Point(14, 151);
+            this.picEmployee.Name = "picEmployee";
+            this.picEmployee.Size = new System.Drawing.Size(68, 41);
+            this.picEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picEmployee.TabIndex = 8;
+            this.picEmployee.TabStop = false;
+            // 
+            // btnVendor
+            // 
+            this.btnVendor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVendor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnVendor.FlatAppearance.BorderSize = 0;
+            this.btnVendor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendor.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.btnVendor.Location = new System.Drawing.Point(9, 258);
+            this.btnVendor.Name = "btnVendor";
+            this.btnVendor.Size = new System.Drawing.Size(396, 50);
+            this.btnVendor.TabIndex = 16;
+            this.btnVendor.Text = "         Vendor";
+            this.btnVendor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVendor.UseVisualStyleBackColor = false;
+            // 
+            // picPet
+            // 
+            this.picPet.Image = global::PET_Store.Properties.Resources.PetIcon;
+            this.picPet.Location = new System.Drawing.Point(14, 316);
+            this.picPet.Name = "picPet";
+            this.picPet.Size = new System.Drawing.Size(68, 41);
+            this.picPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPet.TabIndex = 10;
+            this.picPet.TabStop = false;
+            // 
+            // picLogout
+            // 
+            this.picLogout.Image = global::PET_Store.Properties.Resources.logout;
+            this.picLogout.Location = new System.Drawing.Point(14, 563);
+            this.picLogout.Name = "picLogout";
+            this.picLogout.Size = new System.Drawing.Size(68, 41);
+            this.picLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogout.TabIndex = 14;
+            this.picLogout.TabStop = false;
+            // 
+            // picCustomer
+            // 
+            this.picCustomer.Image = global::PET_Store.Properties.Resources.customer;
+            this.picCustomer.Location = new System.Drawing.Point(14, 206);
+            this.picCustomer.Name = "picCustomer";
+            this.picCustomer.Size = new System.Drawing.Size(68, 41);
+            this.picCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCustomer.TabIndex = 12;
+            this.picCustomer.TabStop = false;
+            // 
+            // btnHome
+            // 
+            this.btnHome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.btnHome.Location = new System.Drawing.Point(9, 92);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(396, 50);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "         Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // MainForm
             // 
@@ -362,19 +361,19 @@
             this.Text = "Employee";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.First.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmployee)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -399,6 +398,6 @@
         private System.Windows.Forms.Button btnPO;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnSale;
-        private System.Windows.Forms.SplitContainer splitContainer1;
+        public System.Windows.Forms.SplitContainer splitContainer1;
     }
 }

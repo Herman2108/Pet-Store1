@@ -81,9 +81,6 @@
             // 
             this.txtAddress.AccessibleDescription = "";
             this.txtAddress.AccessibleName = "";
-            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAddress.Location = new System.Drawing.Point(17, 402);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
@@ -92,9 +89,6 @@
             // 
             // lblAddress
             // 
-            this.lblAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.ForeColor = System.Drawing.Color.Black;
@@ -315,7 +309,9 @@
             this.Controls.Add(this.PanelAC);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddCustomer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AddCustomer";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PanelAC.ResumeLayout(false);
             this.PanelAC.PerformLayout();
             this.ResumeLayout(false);

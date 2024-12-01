@@ -17,18 +17,20 @@ namespace PET_Store
             InitializeComponent();
         }
 
+        MainForm mainForm = new MainForm();
         private void btnAC_Click(object sender, EventArgs e)
         {
             AddCustomer ACus = new AddCustomer();
             ACus.TopLevel = false;
-            ACus.Show();
-            /*if (PanelTask.Controls.Count > 0)
+           
+            if (panelShow.Controls.Count>0)
             {
-                PanelTask.Controls.Clear();
-                PanelTask.Controls.Add(emp);
-            }*/
+                panelShow.Controls.Clear();
+                
+            }
             panelShow.Controls.Add(ACus);
             ACus.BringToFront();
+            ACus.Show();
         }
 
         private void btnCS_Click(object sender, EventArgs e)
@@ -38,6 +40,11 @@ namespace PET_Store
             SCus.Show();
             panelShow.Controls.Add(SCus);
             SCus.BringToFront();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
