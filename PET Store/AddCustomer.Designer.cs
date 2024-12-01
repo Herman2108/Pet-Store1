@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.PanelAC = new System.Windows.Forms.Panel();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.lblAddress = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
@@ -44,13 +46,14 @@
             this.txtFName = new System.Windows.Forms.TextBox();
             this.lblFNameCS = new System.Windows.Forms.Label();
             this.lblAddCS = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
-            this.lblAddress = new System.Windows.Forms.Label();
             this.PanelAC.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelAC
             // 
+            this.PanelAC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelAC.BackColor = System.Drawing.Color.Silver;
             this.PanelAC.Controls.Add(this.txtAddress);
             this.PanelAC.Controls.Add(this.lblAddress);
@@ -69,16 +72,45 @@
             this.PanelAC.Controls.Add(this.txtFName);
             this.PanelAC.Controls.Add(this.lblFNameCS);
             this.PanelAC.Controls.Add(this.lblAddCS);
-            this.PanelAC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelAC.Location = new System.Drawing.Point(0, 0);
             this.PanelAC.Name = "PanelAC";
             this.PanelAC.Size = new System.Drawing.Size(896, 464);
             this.PanelAC.TabIndex = 0;
             // 
+            // txtAddress
+            // 
+            this.txtAddress.AccessibleDescription = "";
+            this.txtAddress.AccessibleName = "";
+            this.txtAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAddress.Location = new System.Drawing.Point(17, 402);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(678, 35);
+            this.txtAddress.TabIndex = 16;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.Black;
+            this.lblAddress.Location = new System.Drawing.Point(12, 361);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(91, 25);
+            this.lblAddress.TabIndex = 15;
+            this.lblAddress.Text = "Address";
+            // 
             // txtEmail
             // 
             this.txtEmail.AccessibleDescription = "";
             this.txtEmail.AccessibleName = "";
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEmail.Location = new System.Drawing.Point(377, 308);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
@@ -87,6 +119,9 @@
             // 
             // lblEmail
             // 
+            this.lblEmail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
@@ -100,6 +135,9 @@
             // 
             this.txtPhone.AccessibleDescription = "";
             this.txtPhone.AccessibleName = "";
+            this.txtPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPhone.Location = new System.Drawing.Point(17, 308);
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
@@ -108,6 +146,9 @@
             // 
             // lblPhone
             // 
+            this.lblPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhone.ForeColor = System.Drawing.Color.Black;
@@ -121,6 +162,9 @@
             // 
             this.txtAge.AccessibleDescription = "";
             this.txtAge.AccessibleName = "";
+            this.txtAge.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtAge.Location = new System.Drawing.Point(544, 214);
             this.txtAge.Multiline = true;
             this.txtAge.Name = "txtAge";
@@ -129,6 +173,9 @@
             // 
             // lblAge
             // 
+            this.lblAge.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAge.AutoSize = true;
             this.lblAge.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAge.ForeColor = System.Drawing.Color.Black;
@@ -142,6 +189,9 @@
             // 
             this.txtSex.AccessibleDescription = "";
             this.txtSex.AccessibleName = "";
+            this.txtSex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSex.Location = new System.Drawing.Point(377, 214);
             this.txtSex.Multiline = true;
             this.txtSex.Name = "txtSex";
@@ -150,6 +200,9 @@
             // 
             // lblSEX
             // 
+            this.lblSEX.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSEX.AutoSize = true;
             this.lblSEX.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSEX.ForeColor = System.Drawing.Color.Black;
@@ -163,6 +216,9 @@
             // 
             this.txtDOB.AccessibleDescription = "";
             this.txtDOB.AccessibleName = "";
+            this.txtDOB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDOB.Location = new System.Drawing.Point(17, 214);
             this.txtDOB.Multiline = true;
             this.txtDOB.Name = "txtDOB";
@@ -171,6 +227,9 @@
             // 
             // lblDOB
             // 
+            this.lblDOB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDOB.AutoSize = true;
             this.lblDOB.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDOB.ForeColor = System.Drawing.Color.Black;
@@ -182,6 +241,9 @@
             // 
             // lblLNameCS
             // 
+            this.lblLNameCS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLNameCS.AutoSize = true;
             this.lblLNameCS.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLNameCS.ForeColor = System.Drawing.Color.Black;
@@ -195,6 +257,9 @@
             // 
             this.txtLName.AccessibleDescription = "";
             this.txtLName.AccessibleName = "";
+            this.txtLName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLName.Location = new System.Drawing.Point(377, 122);
             this.txtLName.Multiline = true;
             this.txtLName.Name = "txtLName";
@@ -205,6 +270,9 @@
             // 
             this.txtFName.AccessibleDescription = "";
             this.txtFName.AccessibleName = "";
+            this.txtFName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFName.Location = new System.Drawing.Point(17, 122);
             this.txtFName.Multiline = true;
             this.txtFName.Name = "txtFName";
@@ -213,6 +281,9 @@
             // 
             // lblFNameCS
             // 
+            this.lblFNameCS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFNameCS.AutoSize = true;
             this.lblFNameCS.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFNameCS.ForeColor = System.Drawing.Color.Black;
@@ -224,6 +295,9 @@
             // 
             // lblAddCS
             // 
+            this.lblAddCS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAddCS.Font = new System.Drawing.Font("Modern No. 20", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddCS.ForeColor = System.Drawing.Color.Black;
             this.lblAddCS.Location = new System.Drawing.Point(299, 9);
@@ -232,27 +306,6 @@
             this.lblAddCS.TabIndex = 0;
             this.lblAddCS.Text = "Add Customer";
             this.lblAddCS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.AccessibleDescription = "";
-            this.txtAddress.AccessibleName = "";
-            this.txtAddress.Location = new System.Drawing.Point(17, 402);
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(678, 35);
-            this.txtAddress.TabIndex = 16;
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.ForeColor = System.Drawing.Color.Black;
-            this.lblAddress.Location = new System.Drawing.Point(12, 361);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(91, 25);
-            this.lblAddress.TabIndex = 15;
-            this.lblAddress.Text = "Address";
             // 
             // AddCustomer
             // 
