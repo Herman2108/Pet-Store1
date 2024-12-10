@@ -165,9 +165,6 @@
     <Compile Include="VendorForm.Designer.cs">
       <DependentUpon>VendorForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddCustomer.resx">
-      <DependentUpon>AddCustomer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
     </EmbeddedResource>
