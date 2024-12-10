@@ -16,5 +16,10 @@ namespace PET_Store
         {
             InitializeComponent();
         }
+
+        private void entry_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
