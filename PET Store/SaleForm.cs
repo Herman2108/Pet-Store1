@@ -16,5 +16,22 @@ namespace PET_Store
         {
             InitializeComponent();
         }
+
+        private void btnAddNew_Click(object sender, EventArgs e)
+        {
+            //SubSale Subs = new SubSale();
+            //Subs.Show();
+
+            SubSale Subs = new SubSale();
+            Subs.TopLevel = false;
+            if (PanelSale.Controls.Count > 0)
+            {
+                PanelSale.Controls.Clear();
+            }
+            PanelSale.Controls.Add(Subs);
+            Subs.BringToFront();
+            Subs.Show();
+
+        }
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
+using Panel = System.Web.UI.WebControls.Panel;
 
 namespace PET_Store
 {
@@ -18,7 +19,6 @@ namespace PET_Store
         {
             InitializeComponent();
         }
-        
 
         private void btnHome_Click(object sender, EventArgs e)
         {   
@@ -75,6 +75,19 @@ namespace PET_Store
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnSale_Click(object sender, EventArgs e)
+        {
+            SaleForm Sal = new SaleForm();
+            Sal.TopLevel = false;
+            if (splitContainer1.Panel2.Controls.Count > 0)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+            }
+            splitContainer1.Panel2.Controls.Add(Sal);
+            Sal.BringToFront();
+            Sal.Show();
         }
     }
 }
