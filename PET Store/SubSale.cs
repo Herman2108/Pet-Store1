@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace PET_Store
 {
-    public partial class AddCustomer : Form
+    public partial class SubSale : Form
     {
-        public AddCustomer()
+        
+        public SubSale()
         {
             InitializeComponent();
         }

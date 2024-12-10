@@ -264,6 +264,7 @@
             this.btnSale.Text = "         Sale";
             this.btnSale.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSale.UseVisualStyleBackColor = false;
+            this.btnSale.Click += new System.EventHandler(this.btnSale_Click);
             // 
             // pictureBox1
             // 

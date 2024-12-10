@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Panel = System.Web.UI.WebControls.Panel;
 
 namespace PET_Store
 {
@@ -92,6 +93,19 @@ namespace PET_Store
             splitContainer1.Panel2.Controls.Add(frm);
             frm.BringToFront();
             frm.Show();
+        }
+
+        private void btnSale_Click(object sender, EventArgs e)
+        {
+            SaleForm Sal = new SaleForm();
+            Sal.TopLevel = false;
+            if (splitContainer1.Panel2.Controls.Count > 0)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+            }
+            splitContainer1.Panel2.Controls.Add(Sal);
+            Sal.BringToFront();
+            Sal.Show();
         }
     }
 }
