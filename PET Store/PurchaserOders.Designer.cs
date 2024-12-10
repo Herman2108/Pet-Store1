@@ -31,20 +31,36 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnRefresh = new System.Windows.Forms.ToolStripButton();
+            this.btnToolAdd = new System.Windows.Forms.ToolStripButton();
+            this.btnToolEdit = new System.Windows.Forms.ToolStripButton();
+            this.btnToolDelete = new System.Windows.Forms.ToolStripButton();
+            this.btnToolActivate = new System.Windows.Forms.ToolStripButton();
+            this.btnToolDeactivate = new System.Windows.Forms.ToolStripButton();
+            this.btnToolSearch = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnTools = new System.Windows.Forms.ToolStripSplitButton();
             this.toolExport = new System.Windows.Forms.ToolStripMenuItem();
             this.toolImport = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtTotalAmount = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtUnitPrice = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.txtQtyOrder = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.dtPODate = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblPONo = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,6 +72,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelForDatagrideView = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblTotalRows = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -66,29 +89,6 @@
             this.btnBackPage = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.cboActiveUser = new System.Windows.Forms.ComboBox();
-            this.lblPONo = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dtPODate = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtUnitPrice = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtTotalAmount = new System.Windows.Forms.TextBox();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnRefresh = new System.Windows.Forms.ToolStripButton();
-            this.btnToolAdd = new System.Windows.Forms.ToolStripButton();
-            this.btnToolEdit = new System.Windows.Forms.ToolStripButton();
-            this.btnToolDelete = new System.Windows.Forms.ToolStripButton();
-            this.btnToolActivate = new System.Windows.Forms.ToolStripButton();
-            this.btnToolDeactivate = new System.Windows.Forms.ToolStripButton();
-            this.btnToolSearch = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -122,6 +122,84 @@
             this.toolStrip1.Size = new System.Drawing.Size(1508, 37);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.Black;
+            this.btnRefresh.Image = global::PET_Store.Properties.Resources.refresh;
+            this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(86, 24);
+            this.btnRefresh.Text = " Refresh";
+            // 
+            // btnToolAdd
+            // 
+            this.btnToolAdd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToolAdd.ForeColor = System.Drawing.Color.Black;
+            this.btnToolAdd.Image = global::PET_Store.Properties.Resources.plus__1_;
+            this.btnToolAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnToolAdd.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnToolAdd.Name = "btnToolAdd";
+            this.btnToolAdd.Size = new System.Drawing.Size(99, 24);
+            this.btnToolAdd.Text = " Add New";
+            // 
+            // btnToolEdit
+            // 
+            this.btnToolEdit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToolEdit.ForeColor = System.Drawing.Color.Black;
+            this.btnToolEdit.Image = global::PET_Store.Properties.Resources.pencil;
+            this.btnToolEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnToolEdit.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnToolEdit.Name = "btnToolEdit";
+            this.btnToolEdit.Size = new System.Drawing.Size(67, 24);
+            this.btnToolEdit.Text = "  Edit";
+            // 
+            // btnToolDelete
+            // 
+            this.btnToolDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToolDelete.ForeColor = System.Drawing.Color.Black;
+            this.btnToolDelete.Image = global::PET_Store.Properties.Resources.trash;
+            this.btnToolDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnToolDelete.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnToolDelete.Name = "btnToolDelete";
+            this.btnToolDelete.Size = new System.Drawing.Size(85, 24);
+            this.btnToolDelete.Text = "  Delete";
+            // 
+            // btnToolActivate
+            // 
+            this.btnToolActivate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToolActivate.ForeColor = System.Drawing.Color.Black;
+            this.btnToolActivate.Image = global::PET_Store.Properties.Resources.unlock;
+            this.btnToolActivate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnToolActivate.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnToolActivate.Name = "btnToolActivate";
+            this.btnToolActivate.Size = new System.Drawing.Size(95, 24);
+            this.btnToolActivate.Text = "  Activate";
+            this.btnToolActivate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btnToolDeactivate
+            // 
+            this.btnToolDeactivate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToolDeactivate.ForeColor = System.Drawing.Color.Black;
+            this.btnToolDeactivate.Image = global::PET_Store.Properties.Resources.ban__1_;
+            this.btnToolDeactivate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnToolDeactivate.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnToolDeactivate.Name = "btnToolDeactivate";
+            this.btnToolDeactivate.Size = new System.Drawing.Size(112, 24);
+            this.btnToolDeactivate.Text = "  Deactivate";
+            // 
+            // btnToolSearch
+            // 
+            this.btnToolSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToolSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnToolSearch.Image = global::PET_Store.Properties.Resources.search;
+            this.btnToolSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnToolSearch.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnToolSearch.Name = "btnToolSearch";
+            this.btnToolSearch.Size = new System.Drawing.Size(85, 24);
+            this.btnToolSearch.Text = "  Search";
             // 
             // toolStripSeparator1
             // 
@@ -183,6 +261,54 @@
             this.panel2.Size = new System.Drawing.Size(409, 276);
             this.panel2.TabIndex = 17;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(30, 135);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(99, 20);
+            this.label13.TabIndex = 16;
+            this.label13.Text = "Total Amount";
+            // 
+            // txtTotalAmount
+            // 
+            this.txtTotalAmount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTotalAmount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalAmount.ForeColor = System.Drawing.Color.Black;
+            this.txtTotalAmount.Location = new System.Drawing.Point(137, 131);
+            this.txtTotalAmount.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotalAmount.Name = "txtTotalAmount";
+            this.txtTotalAmount.Size = new System.Drawing.Size(249, 27);
+            this.txtTotalAmount.TabIndex = 17;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(30, 85);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 20);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Unit Price";
+            // 
+            // txtUnitPrice
+            // 
+            this.txtUnitPrice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUnitPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnitPrice.ForeColor = System.Drawing.Color.Black;
+            this.txtUnitPrice.Location = new System.Drawing.Point(137, 81);
+            this.txtUnitPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUnitPrice.Name = "txtUnitPrice";
+            this.txtUnitPrice.Size = new System.Drawing.Size(249, 27);
+            this.txtUnitPrice.TabIndex = 15;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -218,6 +344,31 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(465, 276);
             this.panel7.TabIndex = 18;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(26, 138);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(85, 20);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Description";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(128, 135);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(325, 103);
+            this.textBox1.TabIndex = 15;
             // 
             // label1
             // 
@@ -284,6 +435,36 @@
             this.panel8.Size = new System.Drawing.Size(575, 321);
             this.panel8.TabIndex = 16;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
+            // 
+            // dtPODate
+            // 
+            this.dtPODate.Location = new System.Drawing.Point(171, 159);
+            this.dtPODate.Name = "dtPODate";
+            this.dtPODate.Size = new System.Drawing.Size(375, 22);
+            this.dtPODate.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(31, 161);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 20);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "PO Date";
+            // 
+            // lblPONo
+            // 
+            this.lblPONo.AutoSize = true;
+            this.lblPONo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPONo.ForeColor = System.Drawing.Color.Black;
+            this.lblPONo.Location = new System.Drawing.Point(31, 65);
+            this.lblPONo.Name = "lblPONo";
+            this.lblPONo.Size = new System.Drawing.Size(192, 20);
+            this.lblPONo.TabIndex = 14;
+            this.lblPONo.Text = "Purchase Order Number";
             // 
             // label12
             // 
@@ -439,6 +620,63 @@
             this.dataGridView1.Size = new System.Drawing.Size(1484, 312);
             this.dataGridView1.TabIndex = 5;
             // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "PO No.";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 109.225F;
+            this.Column2.HeaderText = "PO Date";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 95.2685F;
+            this.Column3.HeaderText = "Vendor Name";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 134.8346F;
+            this.Column4.HeaderText = "Pet Name";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.FillWeight = 95.2685F;
+            this.Column5.HeaderText = "Qty";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Blue;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column6.FillWeight = 95.2685F;
+            this.Column6.HeaderText = "Amount";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Prepared By";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
@@ -560,244 +798,6 @@
             this.cboActiveUser.Size = new System.Drawing.Size(191, 28);
             this.cboActiveUser.TabIndex = 7;
             // 
-            // lblPONo
-            // 
-            this.lblPONo.AutoSize = true;
-            this.lblPONo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPONo.ForeColor = System.Drawing.Color.Black;
-            this.lblPONo.Location = new System.Drawing.Point(31, 65);
-            this.lblPONo.Name = "lblPONo";
-            this.lblPONo.Size = new System.Drawing.Size(192, 20);
-            this.lblPONo.TabIndex = 14;
-            this.lblPONo.Text = "Purchase Order Number";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(31, 161);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 20);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "PO Date";
-            // 
-            // dtPODate
-            // 
-            this.dtPODate.Location = new System.Drawing.Point(171, 159);
-            this.dtPODate.Name = "dtPODate";
-            this.dtPODate.Size = new System.Drawing.Size(375, 22);
-            this.dtPODate.TabIndex = 16;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(26, 138);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 20);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Description";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(128, 135);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(325, 103);
-            this.textBox1.TabIndex = 15;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(30, 85);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 20);
-            this.label11.TabIndex = 14;
-            this.label11.Text = "Unit Price";
-            // 
-            // txtUnitPrice
-            // 
-            this.txtUnitPrice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUnitPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnitPrice.ForeColor = System.Drawing.Color.Black;
-            this.txtUnitPrice.Location = new System.Drawing.Point(137, 81);
-            this.txtUnitPrice.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(249, 27);
-            this.txtUnitPrice.TabIndex = 15;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(30, 135);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(99, 20);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "Total Amount";
-            // 
-            // txtTotalAmount
-            // 
-            this.txtTotalAmount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalAmount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalAmount.ForeColor = System.Drawing.Color.Black;
-            this.txtTotalAmount.Location = new System.Drawing.Point(137, 131);
-            this.txtTotalAmount.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTotalAmount.Name = "txtTotalAmount";
-            this.txtTotalAmount.Size = new System.Drawing.Size(249, 27);
-            this.txtTotalAmount.TabIndex = 17;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "PO No.";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 109.225F;
-            this.Column2.HeaderText = "PO Date";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 95.2685F;
-            this.Column3.HeaderText = "Vendor Name";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 134.8346F;
-            this.Column4.HeaderText = "Pet Name";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.FillWeight = 95.2685F;
-            this.Column5.HeaderText = "Qty";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Blue;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column6.FillWeight = 95.2685F;
-            this.Column6.HeaderText = "Amount";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Prepared By";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.Black;
-            this.btnRefresh.Image = global::PET_Store.Properties.Resources.refresh;
-            this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(86, 24);
-            this.btnRefresh.Text = " Refresh";
-            // 
-            // btnToolAdd
-            // 
-            this.btnToolAdd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToolAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnToolAdd.Image = global::PET_Store.Properties.Resources.plus__1_;
-            this.btnToolAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnToolAdd.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnToolAdd.Name = "btnToolAdd";
-            this.btnToolAdd.Size = new System.Drawing.Size(99, 24);
-            this.btnToolAdd.Text = " Add New";
-            // 
-            // btnToolEdit
-            // 
-            this.btnToolEdit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToolEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnToolEdit.Image = global::PET_Store.Properties.Resources.pencil;
-            this.btnToolEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnToolEdit.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnToolEdit.Name = "btnToolEdit";
-            this.btnToolEdit.Size = new System.Drawing.Size(67, 24);
-            this.btnToolEdit.Text = "  Edit";
-            // 
-            // btnToolDelete
-            // 
-            this.btnToolDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToolDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnToolDelete.Image = global::PET_Store.Properties.Resources.trash;
-            this.btnToolDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnToolDelete.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnToolDelete.Name = "btnToolDelete";
-            this.btnToolDelete.Size = new System.Drawing.Size(85, 24);
-            this.btnToolDelete.Text = "  Delete";
-            // 
-            // btnToolActivate
-            // 
-            this.btnToolActivate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToolActivate.ForeColor = System.Drawing.Color.Black;
-            this.btnToolActivate.Image = global::PET_Store.Properties.Resources.unlock;
-            this.btnToolActivate.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnToolActivate.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnToolActivate.Name = "btnToolActivate";
-            this.btnToolActivate.Size = new System.Drawing.Size(95, 24);
-            this.btnToolActivate.Text = "  Activate";
-            this.btnToolActivate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btnToolDeactivate
-            // 
-            this.btnToolDeactivate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToolDeactivate.ForeColor = System.Drawing.Color.Black;
-            this.btnToolDeactivate.Image = global::PET_Store.Properties.Resources.ban__1_;
-            this.btnToolDeactivate.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnToolDeactivate.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnToolDeactivate.Name = "btnToolDeactivate";
-            this.btnToolDeactivate.Size = new System.Drawing.Size(112, 24);
-            this.btnToolDeactivate.Text = "  Deactivate";
-            // 
-            // btnToolSearch
-            // 
-            this.btnToolSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToolSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnToolSearch.Image = global::PET_Store.Properties.Resources.search;
-            this.btnToolSearch.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnToolSearch.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnToolSearch.Name = "btnToolSearch";
-            this.btnToolSearch.Size = new System.Drawing.Size(85, 24);
-            this.btnToolSearch.Text = "  Search";
-            // 
             // PurchaserOders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -810,7 +810,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PurchaserOders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Employee";
+            this.Text = "PurchaserOder";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
