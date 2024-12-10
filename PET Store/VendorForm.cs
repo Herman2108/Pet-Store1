@@ -27,15 +27,7 @@ namespace PET_Store
 
         private void btnSearch_Paint(object sender, PaintEventArgs e)
         {
-            // Create a linear gradient brush
-            using (LinearGradientBrush brush = new LinearGradientBrush(btnSearch.ClientRectangle, Color.LightBlue, Color.DarkBlue, 45F))
-            {
-                // Fill the button with a gradient
-                e.Graphics.FillRectangle(brush, btnSearch.ClientRectangle);
-            }
 
-            // Draw the button text
-            TextRenderer.DrawText(e.Graphics, btnSearch.Text, btnSearch.Font, button1.ClientRectangle, btnSearch.ForeColor, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
         }
     }
 }
