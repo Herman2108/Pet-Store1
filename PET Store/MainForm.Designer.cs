@@ -225,6 +225,7 @@
             this.btnPO.Text = "         Purchase Order";
             this.btnPO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPO.UseVisualStyleBackColor = false;
+            this.btnPO.Click += new System.EventHandler(this.btnPO_Click);
             // 
             // pictureBox3
             // 

@@ -76,5 +76,18 @@ namespace PET_Store
         {
             Application.Exit();
         }
+
+        private void btnPO_Click(object sender, EventArgs e)
+        {
+            PurchaserOders frm = new PurchaserOders();
+            frm.TopLevel = false;
+            if (splitContainer1.Panel2.Controls.Count > 0)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+            }
+            splitContainer1.Panel2.Controls.Add(frm);
+            frm.BringToFront();
+            frm.Show();
+        }
     }
 }

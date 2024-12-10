@@ -1,6 +1,6 @@
 ﻿namespace PET_Store
 {
-    partial class Employee
+    partial class PurchaserOders
     {
         /// <summary>
         /// Required designer variable.
@@ -31,44 +31,31 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnRefresh = new System.Windows.Forms.ToolStripButton();
-            this.btnToolAdd = new System.Windows.Forms.ToolStripButton();
-            this.btnToolEdit = new System.Windows.Forms.ToolStripButton();
-            this.btnToolDelete = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btnTools = new System.Windows.Forms.ToolStripSplitButton();
             this.toolExport = new System.Windows.Forms.ToolStripMenuItem();
             this.toolImport = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.radUser = new System.Windows.Forms.RadioButton();
-            this.radSubAdmin = new System.Windows.Forms.RadioButton();
-            this.radAdmin = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtQtyOrder = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtConfirm = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtVendor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtPw = new System.Windows.Forms.TextBox();
+            this.txtPetType = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelForDatagrideView = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblTotalRows = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -79,6 +66,26 @@
             this.btnBackPage = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.cboActiveUser = new System.Windows.Forms.ComboBox();
+            this.lblPONo = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dtPODate = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtUnitPrice = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtTotalAmount = new System.Windows.Forms.TextBox();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRefresh = new System.Windows.Forms.ToolStripButton();
+            this.btnToolAdd = new System.Windows.Forms.ToolStripButton();
+            this.btnToolEdit = new System.Windows.Forms.ToolStripButton();
+            this.btnToolDelete = new System.Windows.Forms.ToolStripButton();
             this.btnToolActivate = new System.Windows.Forms.ToolStripButton();
             this.btnToolDeactivate = new System.Windows.Forms.ToolStripButton();
             this.btnToolSearch = new System.Windows.Forms.ToolStripButton();
@@ -115,50 +122,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(1508, 37);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.Black;
-            this.btnRefresh.Image = global::PET_Store.Properties.Resources.refresh;
-            this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(86, 24);
-            this.btnRefresh.Text = " Refresh";
-            // 
-            // btnToolAdd
-            // 
-            this.btnToolAdd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToolAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnToolAdd.Image = global::PET_Store.Properties.Resources.plus__1_;
-            this.btnToolAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnToolAdd.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnToolAdd.Name = "btnToolAdd";
-            this.btnToolAdd.Size = new System.Drawing.Size(99, 24);
-            this.btnToolAdd.Text = " Add New";
-            // 
-            // btnToolEdit
-            // 
-            this.btnToolEdit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToolEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnToolEdit.Image = global::PET_Store.Properties.Resources.pencil;
-            this.btnToolEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnToolEdit.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnToolEdit.Name = "btnToolEdit";
-            this.btnToolEdit.Size = new System.Drawing.Size(67, 24);
-            this.btnToolEdit.Text = "  Edit";
-            // 
-            // btnToolDelete
-            // 
-            this.btnToolDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnToolDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnToolDelete.Image = global::PET_Store.Properties.Resources.trash;
-            this.btnToolDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnToolDelete.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
-            this.btnToolDelete.Name = "btnToolDelete";
-            this.btnToolDelete.Size = new System.Drawing.Size(85, 24);
-            this.btnToolDelete.Text = "  Delete";
             // 
             // toolStripSeparator1
             // 
@@ -200,65 +163,25 @@
             this.panel1.Location = new System.Drawing.Point(0, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1508, 278);
+            this.panel1.Size = new System.Drawing.Size(1508, 361);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.radUser);
-            this.panel2.Controls.Add(this.radSubAdmin);
-            this.panel2.Controls.Add(this.radAdmin);
+            this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.txtTotalAmount);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.txtUnitPrice);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(1083, 16);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(409, 244);
+            this.panel2.Size = new System.Drawing.Size(409, 276);
             this.panel2.TabIndex = 17;
-            // 
-            // radUser
-            // 
-            this.radUser.AutoSize = true;
-            this.radUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radUser.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radUser.ForeColor = System.Drawing.Color.Black;
-            this.radUser.Location = new System.Drawing.Point(275, 84);
-            this.radUser.Name = "radUser";
-            this.radUser.Size = new System.Drawing.Size(58, 24);
-            this.radUser.TabIndex = 16;
-            this.radUser.TabStop = true;
-            this.radUser.Text = "User";
-            this.radUser.UseVisualStyleBackColor = true;
-            // 
-            // radSubAdmin
-            // 
-            this.radSubAdmin.AutoSize = true;
-            this.radSubAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radSubAdmin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radSubAdmin.ForeColor = System.Drawing.Color.Black;
-            this.radSubAdmin.Location = new System.Drawing.Point(155, 84);
-            this.radSubAdmin.Name = "radSubAdmin";
-            this.radSubAdmin.Size = new System.Drawing.Size(102, 24);
-            this.radSubAdmin.TabIndex = 15;
-            this.radSubAdmin.TabStop = true;
-            this.radSubAdmin.Text = "Sub Admin";
-            this.radSubAdmin.UseVisualStyleBackColor = true;
-            // 
-            // radAdmin
-            // 
-            this.radAdmin.AutoSize = true;
-            this.radAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radAdmin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radAdmin.ForeColor = System.Drawing.Color.Black;
-            this.radAdmin.Location = new System.Drawing.Point(62, 84);
-            this.radAdmin.Name = "radAdmin";
-            this.radAdmin.Size = new System.Drawing.Size(73, 24);
-            this.radAdmin.TabIndex = 14;
-            this.radAdmin.TabStop = true;
-            this.radAdmin.Text = "Admin";
-            this.radAdmin.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -268,9 +191,9 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(16, 15);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 20);
+            this.label6.Size = new System.Drawing.Size(62, 20);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Role";
+            this.label6.Text = "Amount";
             // 
             // panel3
             // 
@@ -285,13 +208,15 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.label10);
+            this.panel7.Controls.Add(this.textBox1);
             this.panel7.Controls.Add(this.label1);
             this.panel7.Controls.Add(this.panel10);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Controls.Add(this.textBox1);
+            this.panel7.Controls.Add(this.txtQtyOrder);
             this.panel7.Location = new System.Drawing.Point(603, 16);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(465, 244);
+            this.panel7.Size = new System.Drawing.Size(465, 276);
             this.panel7.TabIndex = 18;
             // 
             // label1
@@ -302,9 +227,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(16, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 20);
+            this.label1.Size = new System.Drawing.Size(55, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Position";
+            this.label1.Text = "Detials";
             // 
             // panel10
             // 
@@ -321,40 +246,44 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(36, 77);
+            this.label7.Location = new System.Drawing.Point(26, 88);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 20);
+            this.label7.Size = new System.Drawing.Size(94, 20);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Position";
+            this.label7.Text = "Qty To Order";
             // 
-            // textBox1
+            // txtQtyOrder
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtQtyOrder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(125, 74);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(325, 27);
-            this.textBox1.TabIndex = 9;
+            this.txtQtyOrder.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQtyOrder.ForeColor = System.Drawing.Color.Black;
+            this.txtQtyOrder.Location = new System.Drawing.Point(128, 85);
+            this.txtQtyOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQtyOrder.Name = "txtQtyOrder";
+            this.txtQtyOrder.Size = new System.Drawing.Size(325, 27);
+            this.txtQtyOrder.TabIndex = 9;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Controls.Add(this.dtPODate);
+            this.panel8.Controls.Add(this.label5);
+            this.panel8.Controls.Add(this.lblPONo);
             this.panel8.Controls.Add(this.label12);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.txtName);
-            this.panel8.Controls.Add(this.txtConfirm);
+            this.panel8.Controls.Add(this.txtUserName);
+            this.panel8.Controls.Add(this.txtVendor);
             this.panel8.Controls.Add(this.label3);
             this.panel8.Controls.Add(this.label4);
-            this.panel8.Controls.Add(this.txtPw);
+            this.panel8.Controls.Add(this.txtPetType);
             this.panel8.Location = new System.Drawing.Point(12, 16);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(575, 244);
+            this.panel8.Size = new System.Drawing.Size(575, 321);
             this.panel8.TabIndex = 16;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // label12
             // 
@@ -383,72 +312,72 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(33, 77);
+            this.label2.Location = new System.Drawing.Point(31, 110);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 20);
+            this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "User Name";
+            this.label2.Text = "Prepared By";
             // 
-            // txtName
+            // txtUserName
             // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtUserName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.ForeColor = System.Drawing.Color.Black;
-            this.txtName.Location = new System.Drawing.Point(173, 75);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(375, 27);
-            this.txtName.TabIndex = 3;
+            this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.ForeColor = System.Drawing.Color.Black;
+            this.txtUserName.Location = new System.Drawing.Point(171, 108);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(375, 27);
+            this.txtUserName.TabIndex = 3;
             // 
-            // txtConfirm
+            // txtVendor
             // 
-            this.txtConfirm.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtVendor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtConfirm.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirm.ForeColor = System.Drawing.Color.Black;
-            this.txtConfirm.Location = new System.Drawing.Point(173, 181);
-            this.txtConfirm.Margin = new System.Windows.Forms.Padding(4);
-            this.txtConfirm.Name = "txtConfirm";
-            this.txtConfirm.Size = new System.Drawing.Size(375, 27);
-            this.txtConfirm.TabIndex = 7;
+            this.txtVendor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVendor.ForeColor = System.Drawing.Color.Black;
+            this.txtVendor.Location = new System.Drawing.Point(171, 254);
+            this.txtVendor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtVendor.Name = "txtVendor";
+            this.txtVendor.Size = new System.Drawing.Size(375, 27);
+            this.txtVendor.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(33, 132);
+            this.label3.Location = new System.Drawing.Point(31, 207);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 20);
+            this.label3.Size = new System.Drawing.Size(73, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Password";
+            this.label3.Text = "Pet Name";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(33, 183);
+            this.label4.Location = new System.Drawing.Point(31, 256);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 20);
+            this.label4.Size = new System.Drawing.Size(100, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Confirm";
+            this.label4.Text = "Vendor Name";
             // 
-            // txtPw
+            // txtPetType
             // 
-            this.txtPw.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtPetType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPw.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPw.ForeColor = System.Drawing.Color.Black;
-            this.txtPw.Location = new System.Drawing.Point(173, 129);
-            this.txtPw.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPw.Name = "txtPw";
-            this.txtPw.Size = new System.Drawing.Size(375, 27);
-            this.txtPw.TabIndex = 5;
+            this.txtPetType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPetType.ForeColor = System.Drawing.Color.Black;
+            this.txtPetType.Location = new System.Drawing.Point(171, 200);
+            this.txtPetType.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPetType.Name = "txtPetType";
+            this.txtPetType.Size = new System.Drawing.Size(375, 27);
+            this.txtPetType.TabIndex = 5;
             // 
             // panel4
             // 
@@ -457,9 +386,9 @@
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 315);
+            this.panel4.Location = new System.Drawing.Point(0, 398);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1508, 492);
+            this.panel4.Size = new System.Drawing.Size(1508, 409);
             this.panel4.TabIndex = 7;
             // 
             // panelForDatagrideView
@@ -470,7 +399,7 @@
             this.panelForDatagrideView.Controls.Add(this.dataGridView1);
             this.panelForDatagrideView.Location = new System.Drawing.Point(12, 47);
             this.panelForDatagrideView.Name = "panelForDatagrideView";
-            this.panelForDatagrideView.Size = new System.Drawing.Size(1484, 395);
+            this.panelForDatagrideView.Size = new System.Drawing.Size(1484, 312);
             this.panelForDatagrideView.TabIndex = 10;
             // 
             // dataGridView1
@@ -496,7 +425,8 @@
             this.Column3,
             this.Column4,
             this.Column5,
-            this.Column6});
+            this.Column6,
+            this.Column1});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
@@ -506,58 +436,8 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1484, 395);
+            this.dataGridView1.Size = new System.Drawing.Size(1484, 312);
             this.dataGridView1.TabIndex = 5;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "ID Card";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 109.225F;
-            this.Column2.HeaderText = "User Name";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 95.2685F;
-            this.Column3.HeaderText = "Password";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 134.8346F;
-            this.Column4.HeaderText = "Position";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.FillWeight = 95.2685F;
-            this.Column5.HeaderText = "Role";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Blue;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column6.FillWeight = 95.2685F;
-            this.Column6.HeaderText = "Is_Active";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
             // 
             // panel6
             // 
@@ -570,7 +450,7 @@
             this.panel6.Controls.Add(this.btnFirstPage);
             this.panel6.Controls.Add(this.btnBackPage);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 448);
+            this.panel6.Location = new System.Drawing.Point(0, 365);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1508, 44);
             this.panel6.TabIndex = 9;
@@ -673,12 +553,216 @@
             this.cboActiveUser.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboActiveUser.FormattingEnabled = true;
             this.cboActiveUser.Items.AddRange(new object[] {
-            "Active User",
-            "Inactive User"});
+            "Active PO",
+            "Inactive PO"});
             this.cboActiveUser.Location = new System.Drawing.Point(15, 10);
             this.cboActiveUser.Name = "cboActiveUser";
             this.cboActiveUser.Size = new System.Drawing.Size(191, 28);
             this.cboActiveUser.TabIndex = 7;
+            // 
+            // lblPONo
+            // 
+            this.lblPONo.AutoSize = true;
+            this.lblPONo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPONo.ForeColor = System.Drawing.Color.Black;
+            this.lblPONo.Location = new System.Drawing.Point(31, 65);
+            this.lblPONo.Name = "lblPONo";
+            this.lblPONo.Size = new System.Drawing.Size(192, 20);
+            this.lblPONo.TabIndex = 14;
+            this.lblPONo.Text = "Purchase Order Number";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(31, 161);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 20);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "PO Date";
+            // 
+            // dtPODate
+            // 
+            this.dtPODate.Location = new System.Drawing.Point(171, 159);
+            this.dtPODate.Name = "dtPODate";
+            this.dtPODate.Size = new System.Drawing.Size(375, 22);
+            this.dtPODate.TabIndex = 16;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(26, 138);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(85, 20);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Description";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(128, 135);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(325, 103);
+            this.textBox1.TabIndex = 15;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(30, 85);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 20);
+            this.label11.TabIndex = 14;
+            this.label11.Text = "Unit Price";
+            // 
+            // txtUnitPrice
+            // 
+            this.txtUnitPrice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUnitPrice.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUnitPrice.ForeColor = System.Drawing.Color.Black;
+            this.txtUnitPrice.Location = new System.Drawing.Point(137, 81);
+            this.txtUnitPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUnitPrice.Name = "txtUnitPrice";
+            this.txtUnitPrice.Size = new System.Drawing.Size(249, 27);
+            this.txtUnitPrice.TabIndex = 15;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(30, 135);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(99, 20);
+            this.label13.TabIndex = 16;
+            this.label13.Text = "Total Amount";
+            // 
+            // txtTotalAmount
+            // 
+            this.txtTotalAmount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTotalAmount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalAmount.ForeColor = System.Drawing.Color.Black;
+            this.txtTotalAmount.Location = new System.Drawing.Point(137, 131);
+            this.txtTotalAmount.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotalAmount.Name = "txtTotalAmount";
+            this.txtTotalAmount.Size = new System.Drawing.Size(249, 27);
+            this.txtTotalAmount.TabIndex = 17;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "PO No.";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 109.225F;
+            this.Column2.HeaderText = "PO Date";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 95.2685F;
+            this.Column3.HeaderText = "Vendor Name";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 134.8346F;
+            this.Column4.HeaderText = "Pet Name";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.FillWeight = 95.2685F;
+            this.Column5.HeaderText = "Qty";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Blue;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column6.FillWeight = 95.2685F;
+            this.Column6.HeaderText = "Amount";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Prepared By";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.Black;
+            this.btnRefresh.Image = global::PET_Store.Properties.Resources.refresh;
+            this.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(86, 24);
+            this.btnRefresh.Text = " Refresh";
+            // 
+            // btnToolAdd
+            // 
+            this.btnToolAdd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToolAdd.ForeColor = System.Drawing.Color.Black;
+            this.btnToolAdd.Image = global::PET_Store.Properties.Resources.plus__1_;
+            this.btnToolAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnToolAdd.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnToolAdd.Name = "btnToolAdd";
+            this.btnToolAdd.Size = new System.Drawing.Size(99, 24);
+            this.btnToolAdd.Text = " Add New";
+            // 
+            // btnToolEdit
+            // 
+            this.btnToolEdit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToolEdit.ForeColor = System.Drawing.Color.Black;
+            this.btnToolEdit.Image = global::PET_Store.Properties.Resources.pencil;
+            this.btnToolEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnToolEdit.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnToolEdit.Name = "btnToolEdit";
+            this.btnToolEdit.Size = new System.Drawing.Size(67, 24);
+            this.btnToolEdit.Text = "  Edit";
+            // 
+            // btnToolDelete
+            // 
+            this.btnToolDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToolDelete.ForeColor = System.Drawing.Color.Black;
+            this.btnToolDelete.Image = global::PET_Store.Properties.Resources.trash;
+            this.btnToolDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnToolDelete.Margin = new System.Windows.Forms.Padding(0, 1, 10, 2);
+            this.btnToolDelete.Name = "btnToolDelete";
+            this.btnToolDelete.Size = new System.Drawing.Size(85, 24);
+            this.btnToolDelete.Text = "  Delete";
             // 
             // btnToolActivate
             // 
@@ -714,7 +798,7 @@
             this.btnToolSearch.Size = new System.Drawing.Size(85, 24);
             this.btnToolSearch.Text = "  Search";
             // 
-            // Employee
+            // PurchaserOders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -724,7 +808,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Employee";
+            this.Name = "PurchaserOders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Employee";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -764,20 +848,17 @@
         private System.Windows.Forms.ToolStripMenuItem toolImport;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radUser;
-        private System.Windows.Forms.RadioButton radSubAdmin;
-        private System.Windows.Forms.RadioButton radAdmin;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtConfirm;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtVendor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtPw;
+        private System.Windows.Forms.TextBox txtPetType;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelForDatagrideView;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -791,16 +872,26 @@
         public System.Windows.Forms.Button btnBackPage;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ComboBox cboActiveUser;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtQtyOrder;
+        private System.Windows.Forms.Label lblPONo;
+        private System.Windows.Forms.DateTimePicker dtPODate;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtTotalAmount;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtUnitPrice;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }
