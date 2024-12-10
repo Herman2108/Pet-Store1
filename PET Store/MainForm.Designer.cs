@@ -181,6 +181,7 @@
             this.splitContainer1.Panel1.Controls.Add(this.btnEmployee);
             this.splitContainer1.Panel1.Controls.Add(this.btnPet);
             this.splitContainer1.Panel1.Controls.Add(this.btnCustomer);
+            this.splitContainer1.Panel1.ForeColor = System.Drawing.Color.DarkGreen;
             // 
             // splitContainer1.Panel2
             // 
@@ -299,6 +300,7 @@
             this.btnVendor.Text = "         Vendor";
             this.btnVendor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVendor.UseVisualStyleBackColor = false;
+            this.btnVendor.Click += new System.EventHandler(this.btnVendor_Click);
             // 
             // picPet
             // 
