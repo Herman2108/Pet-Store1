@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.splitContainerSubSale = new System.Windows.Forms.SplitContainer();
+            this.btnCloseSS = new System.Windows.Forms.Button();
+            this.btnNewSS = new System.Windows.Forms.Button();
             this.btnApplySS = new System.Windows.Forms.Button();
-            this.btnSaveSS = new System.Windows.Forms.Button();
-            this.btnClearSS = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.lblPayment = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -45,15 +45,15 @@
             this.dateTimePickerSale = new System.Windows.Forms.DateTimePicker();
             this.lblSalDate = new System.Windows.Forms.Label();
             this.lblsale = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lbltotalAmount = new System.Windows.Forms.Label();
             this.dataGridViewSubsale = new System.Windows.Forms.DataGridView();
-            this.lblGrandtotal = new System.Windows.Forms.Label();
-            this.btnNewSS = new System.Windows.Forms.Button();
             this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lbltotalAmount = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.btnCloseSS = new System.Windows.Forms.Button();
+            this.btnClearSS = new System.Windows.Forms.Button();
+            this.btnSaveSS = new System.Windows.Forms.Button();
+            this.lblGrandtotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerSubSale)).BeginInit();
             this.splitContainerSubSale.Panel1.SuspendLayout();
             this.splitContainerSubSale.Panel2.SuspendLayout();
@@ -100,6 +100,30 @@
             this.splitContainerSubSale.SplitterDistance = 1045;
             this.splitContainerSubSale.TabIndex = 0;
             // 
+            // btnCloseSS
+            // 
+            this.btnCloseSS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCloseSS.BackColor = System.Drawing.Color.White;
+            this.btnCloseSS.ForeColor = System.Drawing.Color.Black;
+            this.btnCloseSS.Location = new System.Drawing.Point(12, 690);
+            this.btnCloseSS.Name = "btnCloseSS";
+            this.btnCloseSS.Size = new System.Drawing.Size(98, 37);
+            this.btnCloseSS.TabIndex = 17;
+            this.btnCloseSS.Text = "Close";
+            this.btnCloseSS.UseVisualStyleBackColor = false;
+            this.btnCloseSS.Click += new System.EventHandler(this.btnCloseSS_Click);
+            // 
+            // btnNewSS
+            // 
+            this.btnNewSS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNewSS.ForeColor = System.Drawing.Color.Black;
+            this.btnNewSS.Location = new System.Drawing.Point(817, 690);
+            this.btnNewSS.Name = "btnNewSS";
+            this.btnNewSS.Size = new System.Drawing.Size(98, 37);
+            this.btnNewSS.TabIndex = 16;
+            this.btnNewSS.Text = "New";
+            this.btnNewSS.UseVisualStyleBackColor = true;
+            // 
             // btnApplySS
             // 
             this.btnApplySS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -111,30 +135,6 @@
             this.btnApplySS.TabIndex = 15;
             this.btnApplySS.Text = "Apply";
             this.btnApplySS.UseVisualStyleBackColor = false;
-            // 
-            // btnSaveSS
-            // 
-            this.btnSaveSS.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnSaveSS.BackColor = System.Drawing.Color.White;
-            this.btnSaveSS.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveSS.Location = new System.Drawing.Point(273, 690);
-            this.btnSaveSS.Name = "btnSaveSS";
-            this.btnSaveSS.Size = new System.Drawing.Size(98, 37);
-            this.btnSaveSS.TabIndex = 14;
-            this.btnSaveSS.Text = "Save";
-            this.btnSaveSS.UseVisualStyleBackColor = false;
-            // 
-            // btnClearSS
-            // 
-            this.btnClearSS.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnClearSS.BackColor = System.Drawing.Color.White;
-            this.btnClearSS.ForeColor = System.Drawing.Color.Black;
-            this.btnClearSS.Location = new System.Drawing.Point(89, 690);
-            this.btnClearSS.Name = "btnClearSS";
-            this.btnClearSS.Size = new System.Drawing.Size(98, 37);
-            this.btnClearSS.TabIndex = 13;
-            this.btnClearSS.Text = "Clear";
-            this.btnClearSS.UseVisualStyleBackColor = false;
             // 
             // textBox8
             // 
@@ -267,6 +267,29 @@
             this.lblsale.TabIndex = 0;
             this.lblsale.Text = "Sales";
             // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox4.BackColor = System.Drawing.Color.White;
+            this.textBox4.Location = new System.Drawing.Point(103, 628);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(345, 22);
+            this.textBox4.TabIndex = 17;
+            // 
+            // lbltotalAmount
+            // 
+            this.lbltotalAmount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbltotalAmount.AutoSize = true;
+            this.lbltotalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotalAmount.ForeColor = System.Drawing.Color.Black;
+            this.lbltotalAmount.Location = new System.Drawing.Point(3, 628);
+            this.lbltotalAmount.Name = "lbltotalAmount";
+            this.lbltotalAmount.Size = new System.Drawing.Size(80, 25);
+            this.lbltotalAmount.TabIndex = 17;
+            this.lbltotalAmount.Text = "Amount";
+            // 
             // dataGridViewSubsale
             // 
             this.dataGridViewSubsale.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -287,32 +310,6 @@
             this.dataGridViewSubsale.Size = new System.Drawing.Size(454, 496);
             this.dataGridViewSubsale.TabIndex = 1;
             // 
-            // lblGrandtotal
-            // 
-            this.lblGrandtotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblGrandtotal.BackColor = System.Drawing.Color.Red;
-            this.lblGrandtotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblGrandtotal.Font = new System.Drawing.Font("Cambria", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrandtotal.ForeColor = System.Drawing.Color.Black;
-            this.lblGrandtotal.Location = new System.Drawing.Point(3, 30);
-            this.lblGrandtotal.Name = "lblGrandtotal";
-            this.lblGrandtotal.Size = new System.Drawing.Size(454, 68);
-            this.lblGrandtotal.TabIndex = 0;
-            this.lblGrandtotal.Text = "Grand Total";
-            this.lblGrandtotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnNewSS
-            // 
-            this.btnNewSS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewSS.ForeColor = System.Drawing.Color.Black;
-            this.btnNewSS.Location = new System.Drawing.Point(817, 690);
-            this.btnNewSS.Name = "btnNewSS";
-            this.btnNewSS.Size = new System.Drawing.Size(98, 37);
-            this.btnNewSS.TabIndex = 16;
-            this.btnNewSS.Text = "New";
-            this.btnNewSS.UseVisualStyleBackColor = true;
-            // 
             // ColumnType
             // 
             this.ColumnType.HeaderText = "Type";
@@ -331,40 +328,44 @@
             this.ColumnPrice.MinimumWidth = 6;
             this.ColumnPrice.Name = "ColumnPrice";
             // 
-            // lbltotalAmount
+            // btnClearSS
             // 
-            this.lbltotalAmount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnClearSS.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnClearSS.BackColor = System.Drawing.Color.White;
+            this.btnClearSS.ForeColor = System.Drawing.Color.Black;
+            this.btnClearSS.Location = new System.Drawing.Point(89, 690);
+            this.btnClearSS.Name = "btnClearSS";
+            this.btnClearSS.Size = new System.Drawing.Size(98, 37);
+            this.btnClearSS.TabIndex = 13;
+            this.btnClearSS.Text = "Clear";
+            this.btnClearSS.UseVisualStyleBackColor = false;
+            // 
+            // btnSaveSS
+            // 
+            this.btnSaveSS.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnSaveSS.BackColor = System.Drawing.Color.White;
+            this.btnSaveSS.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveSS.Location = new System.Drawing.Point(273, 690);
+            this.btnSaveSS.Name = "btnSaveSS";
+            this.btnSaveSS.Size = new System.Drawing.Size(98, 37);
+            this.btnSaveSS.TabIndex = 14;
+            this.btnSaveSS.Text = "Save";
+            this.btnSaveSS.UseVisualStyleBackColor = false;
+            // 
+            // lblGrandtotal
+            // 
+            this.lblGrandtotal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbltotalAmount.AutoSize = true;
-            this.lbltotalAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotalAmount.ForeColor = System.Drawing.Color.Black;
-            this.lbltotalAmount.Location = new System.Drawing.Point(3, 628);
-            this.lbltotalAmount.Name = "lbltotalAmount";
-            this.lbltotalAmount.Size = new System.Drawing.Size(80, 25);
-            this.lbltotalAmount.TabIndex = 17;
-            this.lbltotalAmount.Text = "Amount";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(103, 628);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(345, 22);
-            this.textBox4.TabIndex = 17;
-            // 
-            // btnCloseSS
-            // 
-            this.btnCloseSS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnCloseSS.BackColor = System.Drawing.Color.White;
-            this.btnCloseSS.ForeColor = System.Drawing.Color.Black;
-            this.btnCloseSS.Location = new System.Drawing.Point(12, 690);
-            this.btnCloseSS.Name = "btnCloseSS";
-            this.btnCloseSS.Size = new System.Drawing.Size(98, 37);
-            this.btnCloseSS.TabIndex = 17;
-            this.btnCloseSS.Text = "Close";
-            this.btnCloseSS.UseVisualStyleBackColor = false;
+            this.lblGrandtotal.BackColor = System.Drawing.Color.Red;
+            this.lblGrandtotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblGrandtotal.Font = new System.Drawing.Font("Cambria", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGrandtotal.ForeColor = System.Drawing.Color.Black;
+            this.lblGrandtotal.Location = new System.Drawing.Point(3, 30);
+            this.lblGrandtotal.Name = "lblGrandtotal";
+            this.lblGrandtotal.Size = new System.Drawing.Size(454, 68);
+            this.lblGrandtotal.TabIndex = 0;
+            this.lblGrandtotal.Text = "Grand Total";
+            this.lblGrandtotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SubSale
             // 
