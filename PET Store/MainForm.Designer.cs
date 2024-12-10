@@ -192,7 +192,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::PET_Store.Properties.Resources.Purchese;
+            //this.pictureBox4.Image = global::PET_Store.Properties.Resources.Purchese;
             this.pictureBox4.Location = new System.Drawing.Point(14, 428);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(68, 41);
@@ -202,7 +202,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::PET_Store.Properties.Resources._118418_user_512x512;
+//            this.pictureBox2.Image = global::PET_Store.Properties.Resources._118418_user_512x512;
             this.pictureBox2.Location = new System.Drawing.Point(14, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(94, 85);
@@ -230,7 +230,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::PET_Store.Properties.Resources.Sale_removebg_preview;
+  //          this.pictureBox3.Image = global::PET_Store.Properties.Resources.Sale_removebg_preview;
             this.pictureBox3.Location = new System.Drawing.Point(14, 372);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(68, 41);
@@ -240,7 +240,7 @@
             // 
             // picHome
             // 
-            this.picHome.Image = global::PET_Store.Properties.Resources.Home1;
+//            this.picHome.Image = global::PET_Store.Properties.Resources.Home1;
             this.picHome.Location = new System.Drawing.Point(14, 96);
             this.picHome.Name = "picHome";
             this.picHome.Size = new System.Drawing.Size(68, 41);
@@ -267,7 +267,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PET_Store.Properties.Resources.Vendor;
+//            this.pictureBox1.Image = global::PET_Store.Properties.Resources.Vendor;
             this.pictureBox1.Location = new System.Drawing.Point(14, 262);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(68, 41);
@@ -277,7 +277,7 @@
             // 
             // picEmployee
             // 
-            this.picEmployee.Image = global::PET_Store.Properties.Resources.Employee;
+//            this.picEmployee.Image = global::PET_Store.Properties.Resources.Employee;
             this.picEmployee.Location = new System.Drawing.Point(14, 151);
             this.picEmployee.Name = "picEmployee";
             this.picEmployee.Size = new System.Drawing.Size(68, 41);
@@ -305,7 +305,7 @@
             // 
             // picPet
             // 
-            this.picPet.Image = global::PET_Store.Properties.Resources.PetIcon;
+//            this.picPet.Image = global::PET_Store.Properties.Resources.PetIcon;
             this.picPet.Location = new System.Drawing.Point(14, 316);
             this.picPet.Name = "picPet";
             this.picPet.Size = new System.Drawing.Size(68, 41);
@@ -315,7 +315,7 @@
             // 
             // picLogout
             // 
-            this.picLogout.Image = global::PET_Store.Properties.Resources.logout;
+//            this.picLogout.Image = global::PET_Store.Properties.Resources.logout;
             this.picLogout.Location = new System.Drawing.Point(14, 563);
             this.picLogout.Name = "picLogout";
             this.picLogout.Size = new System.Drawing.Size(68, 41);
@@ -325,7 +325,7 @@
             // 
             // picCustomer
             // 
-            this.picCustomer.Image = global::PET_Store.Properties.Resources.customer;
+//            this.picCustomer.Image = global::PET_Store.Properties.Resources.customer;
             this.picCustomer.Location = new System.Drawing.Point(14, 206);
             this.picCustomer.Name = "picCustomer";
             this.picCustomer.Size = new System.Drawing.Size(68, 41);
