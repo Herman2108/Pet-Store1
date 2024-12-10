@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PET_Store
 {
-    public partial class entry_purchase : Form
+    public partial class entry : Form
     {
-        public entry_purchase()
+        public entry()
         {
             InitializeComponent();
-        }
-
-        private void entry_purchase_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
