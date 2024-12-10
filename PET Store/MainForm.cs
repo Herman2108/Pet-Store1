@@ -1,13 +1,4 @@
-﻿using System;      
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.UI.WebControls;
+﻿using System;
 using System.Windows.Forms;
 
 namespace PET_Store
@@ -18,11 +9,11 @@ namespace PET_Store
         {
             InitializeComponent();
         }
-        
+
 
         private void btnHome_Click(object sender, EventArgs e)
-        {   
-            Home home= new Home();
+        {
+            Home home = new Home();
             home.TopLevel = false;
             if (splitContainer1.Panel2.Controls.Count > 0)
             {
@@ -35,7 +26,7 @@ namespace PET_Store
 
         private void btnEmployee_Click(object sender, EventArgs e)
         {
-            Employee emp= new Employee();
+            Employee emp = new Employee();
             emp.TopLevel = false;
             if (splitContainer1.Panel2.Controls.Count > 0)
             {
@@ -61,7 +52,7 @@ namespace PET_Store
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
-            Customer Cus= new Customer();
+            Customer Cus = new Customer();
             Cus.TopLevel = false;
             if (splitContainer1.Panel2.Controls.Count > 0)
             {
@@ -75,6 +66,19 @@ namespace PET_Store
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnVendor_Click(object sender, EventArgs e)
+        {
+            VendorForm Cus = new VendorForm();
+            Cus.TopLevel = false;
+            if (splitContainer1.Panel2.Controls.Count > 0)
+            {
+                splitContainer1.Panel2.Controls.Clear();
+            }
+            splitContainer1.Panel2.Controls.Add(Cus);
+            Cus.BringToFront();
+            Cus.Show();
         }
 
         private void btnPO_Click(object sender, EventArgs e)
